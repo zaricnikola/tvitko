@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/search/", method="POST">
+    {% csrf_token %}
+Unesi tweet tagove:
+<input type="text" name="tagovi"/>
+Unesi broj tweetova:
+<input type="number" name="brojtvitova" maxlength=5>
+    <button type="submit">pretrazi</button>
+</form>
+
+</body>
+</html>
